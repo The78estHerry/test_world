@@ -1,12 +1,6 @@
 ﻿var g_api_url = "https://slack.com/api/";
-var g_api_bot_token = "xoxb-88531198406-MvDzRsRO3KeID6gBLryXU4sY";
+var g_api_bot_token = "xoxb-88531198406-ut80B57fI8z7BwtlwolSE9m5";
 var g_default_channel_id = "C2LFCAD7W";
-
-//$(document).ready(
-//	function() 
-//	{ 
-		// bind 'myForm' and provide a simple callback function 
-//); 
 
 function post(path, params, method)
 {	
@@ -47,7 +41,8 @@ function talk(message)
 		token:g_api_bot_token, 
 		channel:g_default_channel_id, 
 		text:message, 
-		pretty:"1" 
+		as_user:"true",
+		pretty:"1",
 	};
 
 	go_slack("chat.postMessage", params);
@@ -55,19 +50,5 @@ function talk(message)
 
 function main()
 {	
-	//talk("測試測試測試講講話");	
+	talk("測試測試測試講講話");	
 }
-        // wait for the DOM to be loaded 
-
-
-//$('#myForm').ajaxForm
-//(
-//	{
-//		//url: 'myscript.php', // or whatever
-//		dataType : 'json',
-//		success : function (response) 
-//		{
-//			alert("The server says: " + response);
-//		}
-//	}
-//);
