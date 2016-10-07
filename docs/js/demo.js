@@ -1,5 +1,5 @@
 ﻿var g_api_url = "https://slack.com/api/";
-var g_api_bot_token = "xoxb-88531198406-ut80B57fI8z7BwtlwolSE9m5";
+var g_api_bot_token = "xoxb-88531198406-v1QoDqpUZTObFVrJkSGnLTk9";
 var g_default_channel_id = "C2LFCAD7W";
 
 function post(path, params, method)
